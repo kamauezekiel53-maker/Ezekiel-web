@@ -1,89 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezekiel Kamau | Developer</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Ezekiel Kamau — developer and creative coder from Kenya.">
+  <title>Ezekiel Kamau | Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Ezekiel Dev home">EZ<span>/</span>DEV</a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/skills.html">Skills</a>
+        <a href="pages/goals.html">Goals</a>
+        <a class="nav-contact" href="pages/contact.html">Contact <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-    <header class="header">
-        <a href="index.html" class="logo">EZEKIEL<span>.DEV</span></a>
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="live-dot"></span> INDEPENDENT DEVELOPER · KENYA</p>
+        <h1>Ideas into<br><span class="gradient-text">digital reality.</span></h1>
+        <p class="hero-lead">I'm <strong>Ezekiel Kamau</strong> — a developer in progress, curious about how technology works and driven to build useful things with it.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="pages/skills.html">Explore my work <span>↗</span></a>
+          <a class="button button-quiet" href="pages/contact.html">Get in touch</a>
+        </div>
+        <div class="tech-strip" aria-label="Technologies">
+          <span>HTML</span><i></i><span>CSS</span><i></i><span>JavaScript</span><i></i><span>Git</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img src="images/images.jpg" alt="Portrait of Ezekiel Kamau">
+          <div class="portrait-overlay"></div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-dot"></span> Always building</div>
+        <div class="floating-chip chip-bottom"><span class="mono">01</span> Learn · Build · Repeat</div>
+        <div class="visual-cross cross-one">+</div><div class="visual-cross cross-two">+</div>
+      </div>
+    </section>
 
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/skills.html">Skills</a>
-            <a href="pages/goals.html">Goals</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-    </header>
+    <section class="intro-section shell section-space reveal">
+      <div class="section-kicker">01 / THE APPROACH</div>
+      <div class="intro-grid">
+        <h2>Curiosity is the<br>starting point.</h2>
+        <div>
+          <p class="large-copy">I enjoy taking an idea, understanding the problem behind it, and turning it into something people can actually use.</p>
+          <a class="text-link" href="pages/about.html">A little more about me <span>↗</span></a>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero container">
+    <section class="work-section shell section-space">
+      <div class="section-heading reveal">
+        <div><div class="section-kicker">02 / CURRENT TOOLKIT</div><h2>Things I'm learning<br>to do well<span class="accent">.</span></h2></div>
+        <a class="text-link desktop-link" href="pages/skills.html">View all skills <span>↗</span></a>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><div class="card-top"><span class="card-number">01</span><span class="card-symbol">&lt;/&gt;</span></div><h3>Web structure</h3><p>Writing clean, semantic HTML that gives websites a strong foundation.</p><span class="card-tag">HTML</span></article>
+        <article class="feature-card reveal reveal-delay"><div class="card-top"><span class="card-number">02</span><span class="card-symbol">✳</span></div><h3>Visual design</h3><p>Building responsive layouts, visual systems and polished interactions with CSS.</p><span class="card-tag">CSS</span></article>
+        <article class="feature-card reveal"><div class="card-top"><span class="card-number">03</span><span class="card-symbol">{ }</span></div><h3>Interactivity</h3><p>Learning JavaScript to make interfaces respond, adapt and feel alive.</p><span class="card-tag">JAVASCRIPT</span></article>
+      </div>
+      <a class="text-link mobile-link" href="pages/skills.html">View all skills <span>↗</span></a>
+    </section>
 
-            <div class="hero-content">
-                <p class="intro">HELLO, I'M</p>
+    <section class="statement shell section-space reveal">
+      <div class="section-kicker">03 / THE DIRECTION</div>
+      <p>Not here to follow the future.<br><span class="gradient-text">Here to help build it.</span></p>
+      <a class="button button-primary" href="pages/goals.html">Explore my goals <span>↗</span></a>
+    </section>
 
-                <h1>Ezekiel Kamau</h1>
+    <section class="contact-band shell reveal">
+      <div><div class="section-kicker">HAVE A PROJECT IN MIND?</div><h2>Let's make something<br>worth using.</h2></div>
+      <a class="round-link" href="pages/contact.html" aria-label="Contact Ezekiel">↗</a>
+    </section>
+  </main>
 
-                <h2>Web Developer & Creative Coder</h2>
-
-                <p>
-                    I build modern, responsive and creative digital
-                    experiences. I love technology, programming
-                    and turning ideas into reality.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="pages/skills.html" class="btn">Explore My Skills</a>
-                    <a href="pages/contact.html" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <img src="images/images.jpg" alt="Ezekiel Kamau">
-            </div>
-
-        </section>
-
-        <section class="section container">
-            <h2 class="section-title">Building the Future Through Code</h2>
-
-            <p class="section-description">
-                I am a self-directed developer passionate about
-                learning new technologies and creating useful
-                digital products.
-            </p>
-        </section>
-
-        <section class="section container">
-            <h2 class="section-title">Featured Skills</h2>
-
-            <div class="card-grid">
-                <article class="card">
-                    <h3>HTML</h3>
-                    <p>Building structured web pages.</p>
-                </article>
-
-                <article class="card">
-                    <h3>CSS</h3>
-                    <p>Creating beautiful website designs.</p>
-                </article>
-
-                <article class="card">
-                    <h3>JavaScript</h3>
-                    <p>Adding functionality to websites.</p>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>&copy; 2026 Ezekiel Kamau. All rights reserved.</p>
-    </footer>
-
+  <footer class="site-footer shell"><a class="brand" href="index.html">EZ<span>/</span>DEV</a><p>Built with curiosity and code.</p><p>© <span data-year>2026</span> Ezekiel Kamau</p></footer>
 </body>
 </html>
