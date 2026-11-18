@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ezekiel Kamau</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="logo">EZEKIEL<span>.DEV</span></a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="goals.html">Goals</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <h1>Let's Work Together</h1>
+            <p>Have an idea or project? Get in touch.</p>
+        </section>
+
+        <section class="contact-layout">
+
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+
+                <p>
+                    I am interested in technology, collaboration
+                    and building useful digital products.
+                </p>
+
+                <div class="card">
+                    <h3>Location</h3>
+                    <p>Kenya</p>
+                </div>
+
+                <div class="card">
+                    <h3>Interests</h3>
+                    <p>Web development and software engineering.</p>
+                </div>
+            </div>
+
+            <form class="contact-form">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                    placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                    placeholder="Enter a password">
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+
+                    <label>
+                        <input type="radio" name="contact-method" value="email">
+                        Email
+                    </label>
+
+                    <label>
+                        <input type="radio" name="contact-method" value="phone">
+                        Phone
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What interests you?</legend>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="web">
+                        Web Development
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="software">
+                        Software Development
+                    </label>
+                </fieldset>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message"
+                    rows="5" placeholder="Write your message..."></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Ezekiel Kamau. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+
+/* =========================
+   1. GENERAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #080D18;
+    --surface: #111B2B;
+    --surface-light: #19263A;
+    --primary: #00D9FF;
+    --text: #FFFFFF;
+    --muted: #A7B3C5;
+    --border: #26364B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* =========================
+   2. HEADER AND NAVIGATION
+========================= */
+
+.header {
+    width: 100%;
+    min-height: 80px;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0B1322;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: var(--text);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--primary);
+}
+
+/* =========================
+   3. GENERAL CONTAINERS
+========================= */
+
+.container {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 65px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: var(--muted);
+    max-width: 700px;
+}
+
+/* =========================
+   4. HOME PAGE HERO
+========================= */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.intro {
+    color: var(--primary);
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: var(--primary);
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.intro) {
+    color: var(--muted);
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 0 1 380px;
+}
+
+.hero-image img,
+.about-image img {
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+}
+
+/* =========================
+   5. BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: #06101A;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+}
+
+/* =========================
+   6. PAGE HEADINGS
+========================= */
+
+.page-heading {
+    text-align: center;
+    padding: 75px 0 55px;
+}
+
+.page-heading h1 {
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: var(--muted);
+}
+
+/* =========================
+   7. CARDS
+========================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    padding-bottom: 40px;
+}
+
+.card {
+    background: var(--surface);
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+/* =========================
+   8. ABOUT PAGE
+========================= */
+
+.about-layout {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding-bottom: 50px;
+}
+
+.about-image {
+    flex: 0 1 350px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.about-content .btn {
+    margin-top: 10px;
+}
+
+/* =========================
+   9. SKILLS TABLE
+========================= */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin: 25px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+}
+
+th,
+td {
+    padding: 16px;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+th {
+    color: var(--primary);
+    background: var(--surface-light);
+}
+
+td {
+    color: var(--muted);
+}
+
+/* =========================
+   10. GOALS PAGE
+========================= */
+
+.goal-card {
+    min-height: 240px;
+}
+
+.goal-number {
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.goal-card h2 {
+    margin: 15px 0;
+    font-size: 21px;
+}
+
+.vision {
+    text-align: center;
+}
+
+.vision h2 {
+    color: var(--primary);
+    font-size: 30px;
+}
+
+/* =========================
+   11. CONTACT PAGE
+========================= */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 35px;
+    padding-bottom: 70px;
+}
+
+.contact-info h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.contact-info .card {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    background: var(--surface);
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.contact-form label,
+.contact-form legend {
+    color: var(--text);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]),
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    color: var(--text);
+    font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1px solid var(--primary);
+    border-color: var(--primary);
+}
+
+.contact-form fieldset {
+    border: 1px solid var(--border);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.contact-form fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+    color: var(--muted);
+}
+
+.contact-form fieldset input {
+    accent-color: var(--primary);
+}
+
+/* =========================
+   12. FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid var(--border);
+    background: #0B1322;
+    color: var(--muted);
+}
+
+/* =========================
+   13. MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: min(100%, 300px);
+        flex-basis: auto;
+    }
+
+    .hero-content > p:not(.intro) {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-layout {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: min(100%, 350px);
+        flex-basis: auto;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
